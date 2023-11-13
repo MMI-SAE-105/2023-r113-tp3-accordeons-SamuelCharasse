@@ -9,18 +9,18 @@
   </head>
   <body>
     <h1>Accordéon mémorisant par un nombre l'élèment ouvert</h1>
-    <div class="accordeon" x-data="isOpen1">
+    <div class="accordeon" x-data="{isOpen1: false}">
       <section>
-        <button>bouton 1</button>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore aliquam vitae eveniet molestias omnis optio, dolorem, quo, tempore voluptatem vel quidem. Officia repellat quas veritatis facilis, repellendus vel unde dolorum!</p>
+        <button @click="isOpen1 = !isOpen1">bouton 1</button>
+        <p x-show="isOpen1 === true">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore aliquam vitae eveniet molestias omnis optio, dolorem, quo, tempore voluptatem vel quidem. Officia repellat quas veritatis facilis, repellendus vel unde dolorum!</p>
       </section>
       <section>
-        <button>bouton 2</button>
-        <p>Ipsa modi reiciendis sint odio deleniti cumque quia. Voluptatum necessitatibus sed veniam exercitationem dolor adipisci aliquid cum dolore architecto, officia impedit alias repudiandae voluptatibus. Suscipit maxime est explicabo? Voluptate, ducimus?</p>
+        <button @click="isOpen2 = !isOpen2">bouton 2</button>
+        <p x-show="isOpen2 === true">Ipsa modi reiciendis sint odio deleniti cumque quia. Voluptatum necessitatibus sed veniam exercitationem dolor adipisci aliquid cum dolore architecto, officia impedit alias repudiandae voluptatibus. Suscipit maxime est explicabo? Voluptate, ducimus?</p>
       </section>
       <section>
-        <button>bouton 3</button>
-        <p>Dignissimos minus eum, laboriosam molestias aspernatur aperiam eos eaque, amet exercitationem numquam veniam, facilis accusantium error modi saepe! Facilis totam quidem minima excepturi veniam ipsa repellat maxime id voluptatum eius?</p>
+        <button @click="isOpen3 = !isOpen3">bouton 3</button>
+        <p x-show="isOpen3 === true">Dignissimos minus eum, laboriosam molestias aspernatur aperiam eos eaque, amet exercitationem numquam veniam, facilis accusantium error modi saepe! Facilis totam quidem minima excepturi veniam ipsa repellat maxime id voluptatum eius?</p>
       </section>
     </div>
   </body>
