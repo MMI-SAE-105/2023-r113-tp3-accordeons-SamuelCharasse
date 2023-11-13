@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <title>Accordéon avec x-collapse</title>
   </head>
@@ -12,7 +13,7 @@
     <div class="accordeon">
       <section x-data="{expanded: false}">
         <button @click="expanded = !expanded">bouton 1</button>
-        <p x-show="expanded" x-collapse>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem blanditiis eaque aut culpa doloribus cupiditate saepe quis similique nisi corrupti aliquam accusantium et sed porro, fugit quam sunt? Omnis, error! Nesciunt, dignissimos fuga architecto laborum nam alias voluptatibus nobis quidem, maiores perferendis harum ab natus aut et at delectus provident officia quibusdam fugit accusamus repudiandae. Aspernatur ducimus laborum ratione repellendus, labore quisquam aliquid omnis libero accusantium animi veritatis esse odio blanditiis quasi. Ab quasi harum maxime soluta iure repellendus repudiandae et quo. Atque quibusdam distinctio, ex libero facere harum similique voluptatem voluptas, est, facilis voluptate sapiente quaerat officia nesciunt explicabo?</p>
+        <p x-show="expanded" x-collapse.duration.500ms>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem blanditiis eaque aut culpa doloribus cupiditate saepe quis similique nisi corrupti aliquam accusantium et sed porro, fugit quam sunt? Omnis, error! Nesciunt, dignissimos fuga architecto laborum nam alias voluptatibus nobis quidem, maiores perferendis harum ab natus aut et at delectus provident officia quibusdam fugit accusamus repudiandae. Aspernatur ducimus laborum ratione repellendus, labore quisquam aliquid omnis libero accusantium animi veritatis esse odio blanditiis quasi. Ab quasi harum maxime soluta iure repellendus repudiandae et quo. Atque quibusdam distinctio, ex libero facere harum similique voluptatem voluptas, est, facilis voluptate sapiente quaerat officia nesciunt explicabo?</p>
       </section>
       <section>
         <button>bouton 2</button>
