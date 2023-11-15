@@ -14,15 +14,15 @@
     <h1>Accordéon avec <code>x-collapse</code></h1>
     <div class="accordeon">
       <section x-data="{expanded: false}">
-        <button @click="expanded = !expanded">bouton 1</button>
+        <button :class="{ouvert:expanded}" @click="expanded = !expanded">bouton 1</button>
         <p x-show="expanded" x-collapse.duration.500ms>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem blanditiis eaque aut culpa doloribus cupiditate saepe quis similique nisi corrupti aliquam accusantium et sed porro, fugit quam sunt? Omnis, error! Nesciunt, dignissimos fuga architecto laborum nam alias voluptatibus nobis quidem, maiores perferendis harum ab natus aut et at delectus provident officia quibusdam fugit accusamus repudiandae. Aspernatur ducimus laborum ratione repellendus, labore quisquam aliquid omnis libero accusantium animi veritatis esse odio blanditiis quasi. Ab quasi harum maxime soluta iure repellendus repudiandae et quo. Atque quibusdam distinctio, ex libero facere harum similique voluptatem voluptas, est, facilis voluptate sapiente quaerat officia nesciunt explicabo?</p>
       </section>
       <section x-data="{expanded: false}">
-        <button @click="expanded = ! expanded">bouton 2</button>
+        <button :class="{ouvert:expanded}" @click="expanded = ! expanded">bouton 2</button>
         <p x-show="expanded" x-collapse.duration.800ms>Sit necessitatibus odio ullam. Tempora vitae aperiam dolores provident aliquam perspiciatis exercitationem sit reiciendis voluptate quae repellendus enim eius alias, quasi laboriosam. Facilis iste totam, harum omnis quas odit quos amet, voluptates, cumque veritatis corporis dolore inventore assumenda beatae tempora incidunt quasi voluptatum rerum ex minima quibusdam libero aspernatur repudiandae temporibus! Provident voluptas sequi, nostrum ex, quaerat nisi eum ipsa repellendus quod accusantium enim temporibus! Ratione aperiam obcaecati temporibus possimus nesciunt veritatis adipisci repellendus debitis quia officia harum sit quisquam voluptate alias consequuntur, ipsam dolorem. Eveniet at, natus saepe quas minima adipisci, deleniti quis fugiat maiores perspiciatis dolores aperiam tenetur.</p>
       </section>
       <section x-data="{expanded: false}">
-        <button @click="expanded = ! expanded">bouton 3</button>
+        <button :class="{ouvert:expanded}" @click="expanded = ! expanded">bouton 3</button>
         <p x-show="expanded" x-collapse.min.50px>Distinctio voluptas suscipit quasi consequatur tempore non laudantium. Minima, perspiciatis at quidem quasi quam minus blanditiis praesentium aliquam illum explicabo, laboriosam vitae quisquam similique! Natus quo a consequatur architecto exercitationem molestiae rem ut cum officia quod tempore impedit asperiores reprehenderit nemo quaerat atque aut inventore sunt, aliquam provident accusamus eligendi iure soluta? A corporis nam impedit eligendi, rerum excepturi sint odit recusandae dolorem ea consequuntur vitae error natus incidunt earum fuga. Exercitationem quia, cum, eaque consequatur dignissimos velit, minus excepturi quae sed modi obcaecati dicta pariatur odio laborum eos nihil dolores ipsa deleniti nulla. Voluptatum provident atque recusandae amet! Vero.</p>
       </section>
     </div>
