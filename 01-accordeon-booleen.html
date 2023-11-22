@@ -13,15 +13,15 @@
     <h1>Accordéon avec des booléens</h1>
     <div class="accordeon">
       <section x-data="{isOpen: false}">
-        <button :class="{'ouvert':isOpen, 'fermer': !isOpen}" @click="isOpen = !isOpen">bouton 1</button>
+        <button :class="{'ouvert':isOpen, 'fermer': !isOpen}" @click="isOpen = !isOpen">About accordions</button>
         <p x-show="isOpen === true" x-transition.duration.300ms>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit fugit quia dicta aspernatur voluptatum qui sed soluta beatae libero, tempora perferendis repellat, excepturi impedit esse perspiciatis. Quam eos tempora quae.</p>
       </section>
       <section x-data="{isOpen: false}">
-        <button :class="{'ouvert':isOpen, 'fermer': !isOpen}" @click="isOpen = !isOpen">bouton 2</button>
+        <button :class="{'ouvert':isOpen, 'fermer': !isOpen}" @click="isOpen = !isOpen">Accordion item</button>
         <p x-show="isOpen === true" x-transition.duration.300ms>Earum molestias dolorum possimus animi molestiae nulla minus quae, vitae reiciendis? Quas quia architecto repellendus sequi commodi voluptate voluptates maxime eligendi maiores? Laboriosam, ad? Commodi doloribus praesentium atque dolore omnis?</p>
       </section>
       <section x-data="{isOpen: false}">
-        <button :class="{'ouvert':isOpen, 'fermer': !isOpen}" @click="isOpen = !isOpen">bouton 3</button>
+        <button :class="{'ouvert':isOpen, 'fermer': !isOpen}" @click="isOpen = !isOpen">How to use a JavaScript accordion</button>
         <p x-show="isOpen === true" x-transition.duration.300ms>Hic enim itaque pariatur cumque quia asperiores quaerat ut obcaecati accusantium placeat. Odio molestias beatae, deleniti voluptatibus magnam dolores assumenda quibusdam modi cum aut, tenetur sunt odit consectetur culpa repellat?</p>
       </section>
     </div>  
