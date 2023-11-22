@@ -10,3 +10,7 @@
 .actif[role="tabpanel"]{
     opacity: 1;
 }
+.actif[role="tab"]{
+    background-color: #eee;
+    border: 1px solid #000;
+}
